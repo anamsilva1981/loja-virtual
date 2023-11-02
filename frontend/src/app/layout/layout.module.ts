@@ -9,8 +9,7 @@ import { FooterComponent } from './footer/footer.component';
   ],
 
   declarations: [
-    HeaderComponent, FooterComponent
-  ],
+    HeaderComponent, FooterComponent  ],
 
   exports: [HeaderComponent, FooterComponent],
 })
