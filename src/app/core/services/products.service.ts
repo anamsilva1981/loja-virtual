@@ -31,16 +31,6 @@ export class ProductsService {
     });
   }
 
-  // public getProductById(id: number): Observable<Product> {
-  //   return this._http.get<Product>(`${environment.API}/products/${id}`);
-  // }
 
-
-  // public getProductByFilter(filter: string): void {
-  //   this._http.get<ProductResponse>(`${environment.API}/products/search?q=${filter}`).pipe(take(1))
-  //   .subscribe(response => {
-  //     this._productsSubject$.next(response);
-  //   });
-  // }
 
 }
