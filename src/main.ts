@@ -13,21 +13,11 @@ if (environment.production) {
   enableProdMode();
 }
 
-
-
 bootstrapApplication(AppComponent, {
   providers: [
       importProvidersFrom(BrowserModule, AppRoutingModule,  FormsModule),
       provideAnimations(),
-      provideHttpClient(withInterceptorsFromDi()),
+      // provideHttpClient(withInterceptorsFromDi()),
   ]
 })
   .catch(err => console.error(err));
-function provideHttpClient(arg0: any): import("@angular/core").Provider | import("@angular/core").ImportedNgModuleProviders {
-  throw new Error('Function not implemented.');
-}
-
-function withInterceptorsFromDi(): any {
-  throw new Error('Function not implemented.');
-}
-
